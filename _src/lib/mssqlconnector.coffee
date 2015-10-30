@@ -398,7 +398,7 @@ class MSSQLRequestBase extends require( './base' )
 	
 	`mssqlconnector._parseRow(columns )`
 	
-	Set the value to a correct JSON. This will called by each row.
+	Set the value to allow camelCase JSON. This will called by each row.
 	
 	@param { Object } columns Data which will be returned by tedious 
 	
@@ -409,7 +409,7 @@ class MSSQLRequestBase extends require( './base' )
 	_parseRow: ( columns ) ->
 		o = {}
 		for column in columns
-			o[column.metadata.colName.toLowerCase()] = column.value
+			o[column.metadata.colName.toString()] = column.value
 		return o
 
 
