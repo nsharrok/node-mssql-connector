@@ -12,7 +12,7 @@ Run queries or stored procedures. Based on [tedious by Mike D Pilsbury](http://p
 - Get the data in JSON format
 - Run the test to check that everything is correct
 - Keep the case as defined in the query
-- 
+
 CurrentVersion: `0.3`
 
 ## Installation
