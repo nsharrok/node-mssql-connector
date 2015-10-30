@@ -1,4 +1,5 @@
-# node-mssql-connector
+# node-mssql-direct
+forked from [Nachbarshund/node-mssql-connector](https://github.com/Nachbarshund/node-mssql-connector).
 
 A simple way to connect to Microsoft SQL (MS-SQL) databases from Node.js.
 
@@ -10,7 +11,8 @@ Run queries or stored procedures. Based on [tedious by Mike D Pilsbury](http://p
 - *Stored procedures* can be executed
 - Get the data in JSON format
 - Run the test to check that everything is correct
-
+- Keep the case as defined in the query
+- 
 CurrentVersion: `0.3`
 
 ## Installation
