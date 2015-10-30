@@ -409,7 +409,7 @@ class MSSQLRequestBase extends require( './base' )
 	_parseRow: ( columns ) ->
 		o = {}
 		for column in columns
-			o[column.metadata.colName.toLowerCase()] = column.value
+			o[column.metadata.colName.toString()] = column.value
 		return o
 
 
